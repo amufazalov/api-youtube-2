@@ -8,7 +8,7 @@ class MainController extends Controller {
 
     public function index($request, $response){
 
-        debug($this);
+        //debug($this);
         $query = trim($request->getParam('query'));
         if(isset($query) && !empty($query)){
             $model = new Main();
